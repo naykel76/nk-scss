@@ -1,0 +1,198 @@
+$img-path:                  'http://192.168.157.1:3000/nk-scss/src/images';
+
+// ============================================================== -->
+// Theme Colours
+// ============================================================== -->
+$blue:                      #007bff;
+$indigo:                    #6610f2;
+$purple:                    #6f42c1;
+$pink:                      #e83e8c;
+$red:                       #dc3545;
+$orange:                    #fd7e14;
+$yellow:                    #ffc107;
+$green:                     #28a745;
+$teal:                      #20c997;
+$cyan:                      #17a2b8;
+$offwhite:                  #EEE8D6;
+$darkblue:                  #022933;
+
+$primary:                   $darkblue;
+$secondary:                 #f77f00;
+$success:                   $green;
+$info:                      $cyan;
+$warning:                   $yellow;
+$danger:                    $red;
+$light:                     #fafafa;
+$dark:                      #222222;
+
+
+// ============================================================== -->
+// Global and Base Styles
+// ============================================================== -->
+
+$global-color:            #333;
+$global-bg:               #fff;
+$global-font-family:      Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$global-font-weight:      normal;
+$global-font-size:        1rem;
+$global-line-height:      1.5;
+
+
+// ============================================================== -->
+// Spacings
+// ============================================================== -->
+
+// Used to add padding to components
+$gutter-sm:               1rem;
+$gutter:                  1.25rem;
+$gutter-md:               2.5rem;
+$gutter-lg:               4rem;
+
+// used to seperate elements
+$margin-sm:               1rem;
+$margin:                  1.5rem;
+$margin-md:               40px;
+$margin-lg:               70px;
+$margin-xlg:              140px;
+
+
+
+// ============================================================== -->
+// Font Sizes
+// ============================================================== -->
+
+$font-size-sm:            ($global-font-size * .875);
+$font-size-md:            ($global-font-size * 1.25);
+$font-size-lg:            ($global-font-size * 1.50);
+
+// list of headline sizes
+$heading-sizes:           $global-font-size * 2.5,
+                          $global-font-size * 2,
+                          $global-font-size * 1.75,
+                          $global-font-size * 1.5,
+                          $global-font-size * 1.25,
+                          $global-font-size;
+
+// ============================================================== -->
+// Break Points
+// ============================================================== -->
+
+$small:                   400px;
+$phone:                   576px;
+$tablet:                  768px;
+$desktop:                 992px;
+$large-screen:            1200px;
+
+
+
+
+
+
+// // *** ** UIKIT Variables ** ***
+// // 
+// // Component: Variables
+// //
+// // ========================================================================
+
+
+// // Global variables
+// // ========================================================================
+
+// //
+// // Text
+// //
+
+// $global-color:                                  #444;
+// $global-muted-color:                            #999;
+
+// $global-link-color: 							              #444444;
+// $global-link-hover-color:                       #059;
+
+
+// $global-contrast-color:                         #fff;
+
+
+
+// $global-line-height:                            1.5;
+// //
+// // Backgrounds & Borders
+// //
+
+// $global-background:                             #fff;
+// $global-border:                                 #ddd;
+
+// // Bootstrap colours
+// $global-success-background:                     #8cc14c;
+// $global-success-background:                     #28A745;
+// $global-warning-background:                     #faa732;
+// $global-danger-background:                      #da314b;
+// $global-info-background:                        #17A2B8;
+
+// // Uikit colours
+// // $global-success-background:                     #32d296;
+// // $global-warning-background:                     #faa05a;
+// // $global-danger-background:                      #f0506e;
+
+
+
+
+
+// //
+// // Controls
+// //
+
+// // $global-height:                                 30px;
+// // $global-height-mini:                            20px;
+// // $global-height-sm:                           25px;
+// // $global-height-lg:                           40px;
+
+// $global-control-height:                         40px;
+// $global-control-sm-height:                   30px;
+// $global-control-lg-height:                   55px;
+
+
+// //
+// // Z-index
+// //
+
+// $global-z-index:                                1000;
+
+
+
+
+
+
+
+
+
+
+// //
+// // Component:       Variables
+// // Description:     Defines common values which are used across all components
+// //
+// // ========================================================================
+
+
+// // Breakpoints
+// // ========================================================================
+
+// // Phone Portrait:   Galaxy (360x640), iPhone 6 (375x667), iPhone 6+ (414x736)
+// // Phone Landscape:  Galaxy (640x360), iPhone 6 (667x375), iPhone 6+ (736x414)
+// // Tablet Portrait:  iPad (768x1024), Galaxy Tab (800x1280),
+// // Tablet Landscape: iPad (1024x768), iPad Pro (1024x1366),
+// // Desktop:          Galaxy Tab (1280x800), iPad Pro (1366x1024)
+
+// @breakpoint-sm:                             640px;  // Phone landscape
+// @breakpoint-md:                            960px;  // Tablet Landscape
+// @breakpoint-lg:                             1200px; // Desktop
+// @breakpoint-xlg:                            1600px; // lg Screens
+
+// @breakpoint-xsm-max:                        (@breakpoint-sm - 1);
+// @breakpoint-sm-max:                         (@breakpoint-md - 1);
+// @breakpoint-md-max:                        (@breakpoint-lg - 1);
+// @breakpoint-lg-max:                         (@breakpoint-xlg - 1);
+
+
+
+
+

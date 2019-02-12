@@ -1,0 +1,57 @@
+@mixin createGrid($qtyCols, $margin) {
+
+  flex-basis: ((100% - (($qtyCols - 1) * $margin))/$qtyCols);
+  margin-right: 10px;
+
+  // add margin to each child (n)
+  &:nth-child(n) {
+    margin-right: $margin;
+    margin-bottom: $margin;
+  }
+
+  // n = qtyCols = last item in row
+  &:nth-child(#{$qtyCols}n) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  
+  &:last-child{
+
+    background: #fd0000;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    @include createGrid(3, 0%); // numCols, margin%
+    text-align: center;
+    border: 1px solid grey
+  }
+}
+
+// ====================================================
+
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}

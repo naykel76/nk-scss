@@ -1,0 +1,48 @@
+// @mixin bx($padding, $margin-bottom)
+
+@mixin bx($bg-color, $padding: $gutter){
+  padding: $padding;
+  background-color: $bg-color;
+}
+
+// Create Button Sizes
+// ======================================================================= ->
+
+// Button sizes
+@mixin buttonSize($padding-x, $font-size, $line-height) {
+  padding: 0 $padding-x;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+
+// Utilities
+// ======================================================================= ->
+
+@mixin clearfix {
+
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+
+
+
+@mixin hover {
+  &:hover {
+    @content;
+  }
+}
+
+@mixin active {
+  &:active {
+    @content;
+  }
+}

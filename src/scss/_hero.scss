@@ -1,0 +1,86 @@
+$hero-headline-color: #fff;
+$hero-font-weight: 300;
+$bg-gradient: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+
+
+.hero {
+  background-image: $bg-gradient,
+  url('#{$img-path}/hero-lg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+
+  @include tablet {
+    background-image: $bg-gradient,
+    url('#{$img-path}/hero-md.jpg');
+  }
+
+  @include desktop {
+    background-image: $bg-gradient,
+    url('#{$img-path}/hero-lg.jpg');
+  }
+
+  @include large-screen {
+    background-image: $bg-gradient,
+    url('#{$img-path}/hero-xl.jpg');
+  }
+}
+
+
+
+// main container for hero text
+.hero-text {
+  // font-weight: @hero-font-weight;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  line-height: 1;
+  padding: $gutter-sm;
+  max-width: 1200px;
+
+}
+
+.hero-headline {
+  color: $hero-headline-color;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: $margin;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 3rem;
+  }
+
+  @include desktop {
+    font-size: 4rem;
+  }
+
+  @include large-screen {
+    font-size: 4.5rem;
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: $hero-headline-color;
+  margin-bottom: $margin;
+  font-weight: 400;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, .3);
+
+  @include tablet {
+    font-size: 2rem;
+  }
+
+  @include desktop {
+    font-size: 2.5rem;
+  }
+
+  @include large-screen {
+    font-size: 2.9rem;
+  }
+
+}
